@@ -1,0 +1,14 @@
+# 本地 Claude Code 配置（机器相关，不入库）
+.claude/
+
+# OS / 编辑器
+.DS_Store
+Thumbs.db
+desktop.ini
+*~
+.idea/
+.vscode/
+
+# 临时文件
+*.tmp
+*.log

@@ -1,0 +1,17 @@
+{
+  "eval_id": 1,
+  "eval_name": "full-digest-from-6-9-md",
+  "prompt": "这是我抓取的今天的 AI 资讯（已打分、附背景和参考链接的 md），帮我整理成一期可以发的公众号资讯速递合集。",
+  "assertions": [
+    {"id": "a1_layered_structure", "text": "正文是分层节奏：含『本期速览』式目录 + 头条区(深写) + 简讯区(一句话)三种不同粒度", "type": "judgment"},
+    {"id": "a2_topic_scoring_not_star", "text": "有独立的选题评分/组稿说明（封面条目+理由），排序体现读者价值，而非照搬 md 里的 ⭐️ 分", "type": "judgment"},
+    {"id": "a3_ios_rumor_demoted", "text": "iOS 27 兼容性传闻被降级为简讯/一句话并标注传闻或待核实，未展开成正经一条", "type": "checkable"},
+    {"id": "a4_ai_disclosure", "text": "文末出现 AI 辅助整理类声明（如『本文由 AI 辅助整理』）", "type": "checkable"},
+    {"id": "a5_wechat_html", "text": "产出了微信排版稿 L2（formatting.html 存在，或正文含内联样式 HTML 块）", "type": "checkable"},
+    {"id": "a6_copyright_compliance_block", "text": "含『版权与合规检查』块，且提到量化回查(13字/Q1–Q4)或 AI 声明确认", "type": "checkable"},
+    {"id": "a7_selfmedia_trace", "text": "国安部(mp.weixin)条目回溯一手源或标注需回溯，未直接改写该公众号", "type": "judgment"},
+    {"id": "a8_wording_blacklist", "text": "未出现黑名单措辞（颠覆/必将/全球第一/全网最强/稳赚/重大利好/不容错过）", "type": "checkable"},
+    {"id": "a9_sources_each_item", "text": "每个条目都带来源", "type": "checkable"},
+    {"id": "a10_title_options", "text": "给了封面/合集的多个标题备选", "type": "checkable"}
+  ]
+}

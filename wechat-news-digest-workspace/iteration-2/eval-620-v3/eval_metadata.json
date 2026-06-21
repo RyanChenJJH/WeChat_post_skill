@@ -1,0 +1,15 @@
+{
+  "eval_id": 620,
+  "eval_name": "v3-narrative-digest-6-20",
+  "prompt": "这是 6/20 抓取的 AI 资讯 md（多为 OpenAI 与医疗/生命科学 AI），帮我整理成一期能发的公众号速递合集（联网读源核实细节）。",
+  "assertions": [
+    {"id": "m1_cover_title", "text": "产出封面总标题（1 主 + 3 备选）", "type": "checkable"},
+    {"id": "m2_hook_overview", "text": "本期速览钩子式，每条≤15 字", "type": "checkable"},
+    {"id": "m3_narrative_body", "text": "条目为连贯叙事、术语就地通俗解释（如 TEMPO/基准测试 讲成大白话）", "type": "judgment"},
+    {"id": "m4_medical_risk", "text": "医疗/健康条目降级：只做信息整理，不下诊疗/疗效/媲美医生式结论，标'以官方/论文为准'", "type": "judgment"},
+    {"id": "m5_q1_washing", "text": "丰富叙事未洗稿：与源文无连续≥13 字重合（独立 spot-check 至少 1 条）", "type": "checkable"},
+    {"id": "m6_homogeneity", "text": "多条 OpenAI 同质资讯做了聚类/取舍或专题处理，非 9 条平铺", "type": "judgment"},
+    {"id": "m7_ai_disclosure", "text": "文末 AI 声明 + 未打原创", "type": "checkable"},
+    {"id": "m8_l2_html", "text": "产出微信排版稿 L2", "type": "checkable"}
+  ]
+}

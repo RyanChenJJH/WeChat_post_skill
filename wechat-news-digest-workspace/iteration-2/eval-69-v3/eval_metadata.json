@@ -1,0 +1,15 @@
+{
+  "eval_id": 69,
+  "eval_name": "v3-narrative-digest-6-9",
+  "prompt": "这是 6/9 抓取的 AI 资讯 md，帮我整理成一期能发的公众号资讯速递合集（联网读源核实细节）。",
+  "assertions": [
+    {"id": "n1_cover_title", "text": "产出封面总标题（1 主 + 3 备选，围绕封面条目/主线）", "type": "checkable"},
+    {"id": "n2_hook_overview", "text": "本期速览为钩子式，每条≤15 字", "type": "checkable"},
+    {"id": "n3_narrative_body", "text": "头条/标准条目是连贯叙事（轻标记+叙事主体），非散点罗列；术语有就地通俗解释", "type": "judgment"},
+    {"id": "n4_colloquial_not_hype", "text": "通俗但克制：有大白话/打比方，但无黑名单夸张词；严肃条目收着写", "type": "judgment"},
+    {"id": "n5_q1_washing", "text": "丰富叙事未洗稿：与源文无连续≥13 字重合（独立 spot-check 至少 1 条）", "type": "checkable"},
+    {"id": "n6_source_trace", "text": "联网时回溯 mp.weixin 一手源；断网则诚实降级标注", "type": "judgment"},
+    {"id": "n7_ai_disclosure", "text": "文末 AI 声明 + 未打原创", "type": "checkable"},
+    {"id": "n8_l2_html", "text": "产出微信排版稿 L2（叙事段落同样内联）", "type": "checkable"}
+  ]
+}
